@@ -9,9 +9,14 @@ const SliderFeedback = () => {
         <Swiper
         modules={[ Pagination ]}
         spaceBetween={30}
-        slidesPerView={2}
+        slidesPerView={1}
         centeredSlides={true}
         pagination={{ clickable: true }}
+        breakpoints={{
+            1200: {
+                slidesPerView: 2
+            }
+        }}
       >
         <SwiperSlide>
             <FeedbackCard />
